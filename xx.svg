@@ -6,6 +6,7 @@
    <script type="text/javascript">
 	  var msg = "";
 	  if ("dev0011653.esri.com"===document.domain) {msg="\r\n\r\nFinding: Cross Domain Content Injection";} else {msg="\r\n\r\nFinding: XSS because the SVG content is rendering";}
-      alert('JavaScript alert from the following domain:' + document.domain + '\r\n' + Message:' + msg + '\r\n' + 'Cookie:' + document.cookie);
+      alert('JavaScript alert from the following domain:' + document.domain + '\r\n' + 'Message:' + msg + '\r\n' + 'Cookie:' + document.cookie);
+	  	  
    </script>
 </svg>
