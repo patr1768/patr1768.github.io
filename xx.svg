@@ -11,8 +11,7 @@
 	  else {
 	    msg="Finding: XSS because the SVG content is rendering";
 	 }
-         alert('Foo');
-	   
+  
 	  var alrt = '\r\n\r\nJavaScript alert from this domain: ' + document.domain; 
 	  alrt += '\r\n\r\n' + msg; 
 	  alrt += '\r\n\r\nCookie: '  + document.cookie;
