@@ -13,17 +13,10 @@
 	 }
          alert('Foo');
 	   
-	  //var alrt = '\r\n\r\nJavaScript alert from this domain: ' + document.domain; 
-	  //alrt += '\r\n\r\n' + msg; 
-	  //alrt += '\r\n\r\nCookie: '  + document.cookie;
-	  //alert(alrt);
-	  
-
-	  var ifrm = window.frameElement; // reference to iframe element container
-	  alert('Bar'); 
-         // var doc = ifrm.ownerDocument; // reference to container's document
-	 // alert (ifrm.ownerDocument; 
-	 // alert(doc.cookie);
-	  
+	  var alrt = '\r\n\r\nJavaScript alert from this domain: ' + document.domain; 
+	  alrt += '\r\n\r\n' + msg; 
+	  alrt += '\r\n\r\nCookie: '  + document.cookie;
+	  alert(alrt);
+	  	  
    </script>
 </svg>
