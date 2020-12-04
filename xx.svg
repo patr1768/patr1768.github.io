@@ -12,9 +12,9 @@
 	    msg="\r\n\r\nFinding: XSS because the SVG content is rendering";
 	 }
 
-	  var alrt = '\r\n\r\nJavaScript alert from this domain:' + document.domain 
-	  alrt += '\r\n\r\nMessage:' + msg 
-	  alrt += '\r\n\r\nCookie:' + document.cookie
+	  var alrt = '\r\n\r\nJavaScript alert from this domain:' + document.domain; 
+	  alrt += '\r\n\r\nMessage:' + msg; 
+	  alrt += '\r\n\r\nCookie:' + document.cookie;
 	  alert(alrt);
 	  
 	  
